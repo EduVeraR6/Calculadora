@@ -1,0 +1,97 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Calculadora{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    height: 50vh;
+    width: 25vh;
+    gap: 50px;
+    background-color:#082032;
+    border-radius: 15px;
+}
+
+#Display{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: 18vh;
+    resize: none;
+}
+
+#Botones{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 10px;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+@media (max-width: 820px){
+    .Calculadora{
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        height: 90vh;
+        width: 50vh;
+        background-color:#082032;
+        border-radius: 15px;
+    }
+
+    #Display{
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: right;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        width: 90%;
+        resize: none;
+    }
+
+    #Botones{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .btn{
+        border-radius: 10px;
+        background-color: #fff;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        cursor: pointer;
+        height: 12vh;
+        width: 12vh;
+    }
+
+}
